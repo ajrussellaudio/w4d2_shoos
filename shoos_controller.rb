@@ -10,6 +10,7 @@ end
 
 post "/shoos" do
   @shoe = Shoe.new(params)
+  @shoe.save()
   erb(:create)
 end
 

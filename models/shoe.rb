@@ -4,6 +4,12 @@ class Shoe
 
   attr_reader :first_name, :last_name, :address, :size, :quantity
 
+  def self.all()
+    sql = "SELECT * FROM shoes;"
+    shoes = SqlRunner.run( sql )
+    return shoes.map { |shoe| Shoe.new(shoe) }
+  end
+
   def initialize( options )
     @first_name = options["first_name"]
     @last_name  = options["last_name"]
