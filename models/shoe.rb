@@ -20,4 +20,22 @@ class Shoe
     return @quantity * 50
   end
 
+  def save()
+    sql = "INSERT INTO shoes (
+      first_name,
+      last_name,
+      address,
+      size,
+      quantity
+    ) VALUES (
+      '#{@first_name}',
+      '#{last_name}',
+      '#{address}',
+      '#{size}',
+      #{quantity}
+    ) RETURNING * ;"
+    shoe = SqlRunner.run( sql ).first
+    @id = shoe["id"]
+  end
+
 end
