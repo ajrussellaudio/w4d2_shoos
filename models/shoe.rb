@@ -10,6 +10,8 @@ class Shoe
     @quantity   = options["quantity"]
   end
 
-  
+  def full_name
+    return @first_name.concat(" #{@last_name}")
+  end
 
 end
