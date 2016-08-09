@@ -14,3 +14,8 @@ post "/shoos" do
   erb(:create)
 end
 
+get "/shoos" do
+  @shoes = Shoe.all
+  erb(:index)
+end
+
