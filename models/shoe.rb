@@ -7,7 +7,7 @@ class Shoe
     @last_name  = options["last_name"]
     @address    = options["address"]
     @size       = options["size"]
-    @quantity   = options["quantity"]
+    @quantity   = options["quantity"].to_i
   end
 
   def full_name()
