@@ -1,0 +1,18 @@
+<h3>Order History</h3>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Order</th>
+    <th>Total</th>
+  </tr>
+  <% @shoes.each do |shoe| %>
+  <tr>
+    <td><%= shoe.full_name %></td>
+    <td><%= shoe.address  %></td>
+    <td><%= "#{shoe.quantity} x UK #{shoe.size}" %></td>
+    <td><%= "£#{shoe.total}" %></td>
+  </tr>
+  <% end %>
+</table>
