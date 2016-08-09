@@ -7,3 +7,9 @@ require_relative "./models/shoe"
 get "/shoos/new" do
   erb(:new)
 end
+
+post "/shoos" do
+  @shoe = Shoe.new(params)
+  erb(:create)
+end
+
