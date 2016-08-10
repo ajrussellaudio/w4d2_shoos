@@ -1,3 +1,54 @@
 body {
-  background-color: red;
+  background-color: #3e606f;
+  color: #fffad5;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+}
+
+#header {
+  width: 500px;
+  background-color: #193441;
+  margin: 10px 0px;
+}
+
+#content {
+  width: 500px;
+  background-color: #fcfff5;
+  color: #193441;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26.4px;
+  color: #d1dbbd;
+  padding: 10px;
+  border: 1px solid #d1dbbd;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 1500;
+  line-height: 15.4px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+p .company {
+  color: #d1dbbd;
+}
+
+td {
+  padding: 8px;
+}
+
+th {
+  padding: 8px;
+  background-color: #193441;
+  color: #91AA9D;
 }
